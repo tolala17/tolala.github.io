@@ -1,44 +1,92 @@
+---
+layout: studies_head
+---
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<meta charset="UTF-8">
 <title>Studies</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
-<style>
-  body, h1, h2, h3, h4, h5, h6  {
-    font-family: Roboto, sans-serif;
-  }
-  </style>
+
+
 <body>
 
-<header class="w3-panel w3-center w3-pink">
-  <h1>Studies</h1>
-</header>
+<!-- <button class="w3-btn w3-panel w3-green" onclick="document.getElementById('id01').style.display='block'">Click here for nothing</button> -->
 
-<div class="w3-bar w3-black">
-  <button class="w3-bar-item w3-button" onclick="document.location='index.html'">Home</button>
-  <button class="w3-bar-item w3-button" onclick="javascript:location.href='writings.html'">Writings</button>
-  <button class="w3-bar-item w3-button" onclick="javascript:location.href='studies.html'">Studies</button>
-  <button class="w3-bar-item w3-button" onclick="javascript:location.href='others.html'">Others</button>
-  <button class="w3-bar-item w3-button" onclick="location.href='https://youtu.be/Z-T_O_vl-8Y?si=hnAj-3dDlCJlewwR'">Low - SZA</button>
+<!-- <div id="id01" class="w3-panel w3-green w3-display-container" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-display-topright">X</span>
+  <p>Click on the X to close this panel.</p>
+</div>  -->
+
+
+<div class="w3-panel w3-leftbar w3-light-grey">
+  <p class="w3-xlarge w3-serif">
+  <i>"Stay hungry, stay foolish."</i></p>
+  <p>Steve Jobs</p>
 </div> 
 
+<div class="w3-container">
+  <p>Hi, what I have learned.</p>
+</div>
 
-<div class="w3-container w3-panel w3-center">
-  <div class = "w3-half w3-center">
-    <img src="C:\Users\Linh\Downloads\web\img\cake.jpg" alt="cake" style="width:200px">
+<div class="w3-container w3-orange w3-center">
+  <h3>Academic journey (so far)</h3>
+</div> 
+
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
+  Bachelor</button>
+  
+  <div id="Demo1" class="w3-container w3-hide">
+    <p>Some text..</p>
   </div>
   
-  <div class="w3-half w3-center"
-  <p>hi again. This is what I have been through.</p>
-  <p> Hope u find it fun. </p>
+<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-left-align">
+  Master</button>
+  <div id="Demo2" class="w3-container w3-hide">
+    <p>Some text2..</p>
   </div>
-</div>
 
-<div class="w3-container w3-red">
-  <h5>Footer</h5>
-</div>
+<button onclick="myFunction('Demo3')" class="w3-button w3-block w3-left-align">
+  My CV</button> 
+  <div id="Demo3" class="w3-container w3-hide">
+    <embed src="assets/img/LaThuyLinh_CV.pdf" width="600px" height="2100px" />
+  </div>
+
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+  </script> 
+<div class="w3-container w3-orange w3-center">
+  <h3>Other learning course</h3>
+</div> 
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
+  Adaptive Optics</button>
+  
+  <div id="Demo1" class="w3-container w3-hide">
+    <p>Some text..</p>
+  </div>
+  
+<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-left-align">
+  Sudoku</button>
+  <div id="Demo2" class="w3-container w3-hide">
+    <p>Some text2..</p>
+  </div>
+
+<button onclick="myFunction('Demo3')" class="w3-button w3-block w3-left-align">
+  Space</button> 
+  <div id="Demo3" class="w3-container w3-hide">
+    <embed src="assets/img/LaThuyLinh_CV.pdf" width="600px" height="2100px" />
+  </div>
+
 
 </body>
 </html>

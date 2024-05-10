@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<title>Studies</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+    
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 align="center"><a href="{{ "/" | absolute_url }}">Linh's study zone</a></h1>
+
+        {% if site.logo %}
+          <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXZybTBic3dqZmt4NTJmNTI1ZzJrdWwzeHVlYTQ1dnBmbGIzbGZ1eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FoH28ucxZFJZu/giphy.gif" alt="Logo" class="center" width="75%" height="75%"/>
+        {% endif %}
+
+        <!-- <p><a>Okay here is my site</a></p> -->
+
+        {% if site.github.is_project_page %}
+        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+        {% endif %}
+
+        {% if site.github.is_user_page %}
+        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        {% endif %}
+
+        {% if site.show_downloads %}
+        <ul class="downloads">
+          <li><a href="{{ '../index.html' }}">Home</a></li>
+          <li><a href="{{'../writings.html' }}">Writings</a></li>
+          <li><a href="{{'../studies.html' }}"><strong>Studies</strong></a></li>
+          <li><a href="{{'../studies.html' }}">Musics</a></li>
+          <li><a href="{{ '../others.html' }}">Others</a></li>
+          <!-- <li><button class="w3-button w3-mobile">Home</button></li> -->
+
+        </ul>
+        {% endif %}
+        <!-- <div class="w3-bar-block ">
+          <button class="w3-button w3-bar-item" onclick="djavascript:location.href='index.html'">Home</button>
+          <button class="w3-button w3-bar-item" onclick="javascript:location.href='writings.html'">Writings</button>
+          <button class="w3-button w3-bar-item" onclick="javascript:location.href='studies.html'">Studies</button>
+          <button class="w3-button w3-bar-item" onclick="javascript:location.href='others.html'">Others</button>
+          <button class="w3-button w3-bar-item" onclick="location.href='https://youtu.be/Z-T_O_vl-8Y?si=hnAj-3dDlCJlewwR'">Low - SZA</button>
+        </div>   -->
+
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
